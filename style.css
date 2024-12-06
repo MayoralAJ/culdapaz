@@ -368,3 +368,115 @@ footer{
     width: 1rem;
     height: auto;
 }
+/* Tornar o site responsivo */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+        width: 6rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .link, .btn {
+        font-size: 0.9rem;
+        margin: 0.5rem;
+    }
+
+    .lp {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .lpi {
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    .title, .titlec {
+        font-size: 2.5em;
+    }
+
+    .clients .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .unseen {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .unseen .left, .unseen .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .helping {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .grid-1 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .footer .copy, .footer .company, .footer .support, .footer .stay {
+        margin: 1rem 0;
+    }
+
+    .email {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .extra-send {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title, .titlec {
+        font-size: 2em;
+    }
+
+    .desc, .subdesc {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .megatitle {
+        font-size: 3rem;
+    }
+
+    .card, .read-card {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
